@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김형수 | 자기소개</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header id="navbar">
+    <h2>김형수</h2>
+
+    <nav>
+        <a href="#about">소개</a>
+        <a href="#skill">기술</a>
+        <a href="#goal">목표</a>
+
+        <button id="themeBtn">🌙</button>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <img src="profile.jpg" alt="프로필">
+
+    <h1>안녕하세요.</h1>
+
+    <h3>백엔드 개발자를 꿈꾸는 김형수입니다.</h3>
+
+</section>
+
+<section id="about" class="card">
+
+<h2>🙋 자기소개</h2>
+
+<p>
+안녕하세요.
+소프트웨어를 전공하고 있으며
+Java와 Python을 공부하고 있습니다.
+현재 웹 백엔드 개발자를 목표로 다양한 프로젝트를 진행하고 있습니다.
+</p>
+
+</section>
+
+<section id="skill" class="card">
+
+<h2>💻 기술 스택</h2>
+
+<div class="skills">
+
+<div>Java</div>
+<div>Python</div>
+<div>HTML</div>
+<div>CSS</div>
+<div>JavaScript</div>
+<div>MySQL</div>
+
+</div>
+
+</section>
+
+<section id="goal" class="card">
+
+<h2>🎯 목표</h2>
+
+<p>
+
+사용자에게 도움이 되는 서비스를 만드는 백엔드 개발자가 되는 것이 목표입니다.
+
+</p>
+
+</section>
+
+<footer>
+
+Made by 김형수
+
+</footer>
+
+<script>
+
+const btn=document.getElementById("themeBtn");
+
+btn.onclick=function(){
+
+document.body.classList.toggle("dark");
+
+btn.textContent=
+document.body.classList.contains("dark")?"☀️":"🌙";
+
+}
+
+</script>
+
+</body>
+</html>
